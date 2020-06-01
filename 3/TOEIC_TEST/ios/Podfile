@@ -44,6 +44,8 @@ target 'TOEIC_TEST' do
 
   pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'TOEIC_TESTTests' do
     inherit! :search_paths
     # Pods for testing

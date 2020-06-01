@@ -50,7 +50,7 @@ class TestBody extends Component {
             visibleModal: false,
             data3: [],
             id: '',
-            darkMode:false,
+            darkMode: false,
         }
     }
     componentDidMount() {
@@ -317,7 +317,7 @@ class TestBody extends Component {
             }}>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
                     <View style={styles.question}>
-                        <Text style={styles.text}>{item.id}/{this.state.data.length}</Text>
+                        <Text style={styles.text}>{index + 1}/{this.state.data.length}</Text>
                     </View>
                     <TouchableOpacity onPress={() => this.setVisibleBookmark(item, index)}>
                         <Icon name="star" size={36} color={this.setColor(item.is_bookmark)} />
@@ -389,7 +389,7 @@ class TestBody extends Component {
                 borderRadius: 10,
                 padding: 10,
             }}>
-                <Text>{item.id}</Text>
+                <Text>{index + 1}</Text>
             </View >
         )
 

@@ -1,0 +1,347 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "backgroundColor": "#EEEEEE",
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "#1976D2",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "paddingBottom": 20,
+        "paddingTop": 40,
+      }
+    }
+  >
+    <Text
+      style={
+        Object {
+          "alignContent": "center",
+          "color": "white",
+          "fontSize": 20,
+          "fontWeight": "bold",
+        }
+      }
+    >
+      XEM LẠI
+    </Text>
+  </View>
+  <View
+    style={
+      Object {
+        "flex": 1,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "flex": 0.4,
+        }
+      }
+    >
+      <View
+        accessibilityIgnoresInvertColors={true}
+        style={
+          Object {
+            "flex": 1,
+          }
+        }
+      >
+        <Image
+          source={
+            Object {
+              "testUri": "../../../App/Images/review.jpg",
+            }
+          }
+          style={
+            Array [
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              },
+              Object {
+                "height": undefined,
+                "width": undefined,
+              },
+              undefined,
+            ]
+          }
+        />
+      </View>
+    </View>
+    <View
+      style={
+        Object {
+          "flex": 0.6,
+        }
+      }
+    >
+      <View
+        style={
+          Object {
+            "bottom": 0,
+            "left": 0,
+            "margin": 20,
+            "position": "absolute",
+            "right": 0,
+            "top": -70,
+          }
+        }
+      >
+        <View
+          style={
+            Object {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            forwardedRef={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F5F5F5",
+                "flex": 0.5,
+                "justifyContent": "center",
+                "margin": 5,
+                "opacity": 0,
+                "transform": Array [
+                  Object {
+                    "translateX": -600,
+                  },
+                ],
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                  "padding": 20,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#616161",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "textAlign": "center",
+                    },
+                    Object {
+                      "fontFamily": "FontAwesome",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#616161",
+                    "fontSize": 14,
+                    "height": 40,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                    "width": 80,
+                  }
+                }
+              >
+                Câu yêu thích
+              </Text>
+            </View>
+          </View>
+          <View
+            forwardedRef={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F5F5F5",
+                "flex": 0.5,
+                "justifyContent": "center",
+                "margin": 5,
+                "opacity": 0,
+                "transform": Array [
+                  Object {
+                    "translateX": 600,
+                  },
+                ],
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                  "padding": 20,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#616161",
+                      "fontSize": 35,
+                    },
+                    Object {
+                      "textAlign": "center",
+                    },
+                    Object {
+                      "fontFamily": "FontAwesome",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#616161",
+                    "fontSize": 14,
+                    "height": 40,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                    "width": 80,
+                  }
+                }
+              >
+                Câu làm gần đây
+              </Text>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "alignSelf": "stretch",
+              "flexDirection": "row",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <View
+            forwardedRef={[Function]}
+            style={
+              Object {
+                "alignItems": "center",
+                "backgroundColor": "#F5F5F5",
+                "flex": 0.5,
+                "justifyContent": "center",
+                "margin": 5,
+                "opacity": 0,
+                "transform": Array [
+                  Object {
+                    "translateX": -600,
+                  },
+                ],
+              }
+            }
+          >
+            <View
+              accessible={true}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "opacity": 1,
+                  "padding": 20,
+                }
+              }
+            >
+              <Text
+                allowFontScaling={false}
+                style={
+                  Array [
+                    Object {
+                      "color": "#616161",
+                      "fontSize": 35,
+                    },
+                    Object {
+                      "textAlign": "center",
+                    },
+                    Object {
+                      "fontFamily": "FontAwesome",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal",
+                    },
+                    Object {},
+                  ]
+                }
+              >
+                
+              </Text>
+              <Text
+                style={
+                  Object {
+                    "color": "#616161",
+                    "fontSize": 14,
+                    "height": 40,
+                    "paddingTop": 5,
+                    "textAlign": "center",
+                    "width": 80,
+                  }
+                }
+              >
+                Câu trả lời sai
+              </Text>
+            </View>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;

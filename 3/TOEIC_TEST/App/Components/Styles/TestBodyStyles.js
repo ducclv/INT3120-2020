@@ -13,7 +13,7 @@ export default StyleSheet.create({
   title: {
     alignContent: 'center',
     fontWeight: 'bold',
-    fontSize: 24,
+    fontSize: 20,
     color: 'white'
   },
   iconLeft: {
