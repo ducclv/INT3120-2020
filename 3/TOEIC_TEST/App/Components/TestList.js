@@ -16,7 +16,11 @@ import { requestGET, HOST } from '../Services/Servies'
 import DeviceInfo from 'react-native-device-info'
 import { adService, Banner, UNIT_ID_BANNER } from '../Services/AdService'
 import AsyncStorage from '@react-native-community/async-storage';
-
+import { StackActions, NavigationActions } from 'react-navigation'
+const resetAction = StackActions.reset({
+    index: 0,
+    actions: [NavigationActions.navigate({ routeName: 'MainBody' })],
+})
 class TestList extends Component {
     static navigationOptions = {
         headerShown: false
@@ -25,18 +29,20 @@ class TestList extends Component {
         super(props)
         this.state = {
             data: [],
-            darkMode:false,
+            darkMode: false,
         }
     }
     componentDidMount() {
         this.fetchData()
         this.getTheme()
     }
+
     fetchData = async () => {
         var deviceId = DeviceInfo.getDeviceId()
         var id = this.props.navigation.getParam('id').toString()
         var newData = await requestGET(`${HOST}/tests/viewTest/${id}?client_id=${deviceId}`)
         this.setState({ data: newData.data.list_exercises })
+        console.log(newData.data.list_exercises)
     }
     getTheme = async () => {
         try {
@@ -44,6 +50,11 @@ class TestList extends Component {
             if (value === 'true') this.setState({ darkMode: true })
             else if (value === 'false') this.setState({ darkMode: false })
         } catch (e) { console.log(e) }
+    }
+
+    Back = () => {
+        this.props.navigation.dispatch(resetAction)
+        this.props.navigation.navigate('MainBody')
     }
     renderItem = ({ item }) => {
         return (
@@ -73,7 +84,6 @@ class TestList extends Component {
             </View>
         )
     }
-
     render() {
         return (
             <SafeAreaView style={{ flex: 1, backgroundColor: this.state.darkMode === false ? "#EEEEEE" : "#212121" }}>
@@ -87,7 +97,7 @@ class TestList extends Component {
                     backgroundColor: this.state.darkMode === false ? "#1976D2" : "#263238"
                 }}>
                     <TouchableOpacity
-                        onPress={() => this.props.navigation.navigate('MainBody')}
+                        onPress={() => this.Back()}
                     >
                         <Ionicons name='md-arrow-round-back' size={27} color='#F5F5F5'
                             style={styles.iconLeft}

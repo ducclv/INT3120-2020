@@ -61,7 +61,7 @@ export default class RecentAnswer extends Component {
                         width: 100,
                         backgroundColor: '#9DD6EB'
                     }}>
-                        <Text style={styles.text}>{item.id}/{this.state.data.length}</Text>
+                        <Text style={styles.text}>{index + 1}/{this.state.data.length}</Text>
                     </View>
                 </View>
                 <View style={{ paddingTop: 50, paddingBottom: 50 }}>

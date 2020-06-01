@@ -67,7 +67,7 @@ class TestBody extends Component {
         var deviceId = DeviceInfo.getDeviceId()
         var id = this.props.navigation.getParam('id').toString()
         var newData = await requestGET(`${HOST}/tests/viewExercise/${id}?client_id=${deviceId}`)
-        this.setState({ data: newData.data.questions, data2: newData.data.exercise })
+        this.setState({ data: newData.data.questions, data2: newData.data.test })
     }
     getTheme = async () => {
         try {
