@@ -50,9 +50,9 @@ class ReviewTab extends Component {
                                     }}>
                                     <TouchableOpacity
                                         onPress={() => this.props.navigation.navigate('BookmarkQuestionList')} style={{ padding: 20 }}>
-                                        <Icon name="heart" color={this.props.darkMode == false ? "#616161" : "#EEEEEE"} size={30} style={styles.icon} />
+                                        <Icon name="heart" color={this.props.darkMode == false ? "#0277BD" : "#EEEEEE"} size={30} style={styles.icon} />
                                         <Text style={{
-                                            color: this.props.darkMode == false ? "#616161" : "#EEEEEE",
+                                            color: this.props.darkMode == false ? "#0277BD" : "#EEEEEE",
                                             textAlign: 'center',
                                             paddingTop: 5,
                                             width: 80,
@@ -71,9 +71,9 @@ class ReviewTab extends Component {
                                     }}>
                                     <TouchableOpacity
                                         onPress={() => this.props.navigation.navigate('RecentAnswerList')} style={{ padding: 20 }}>
-                                        <Icon name="star-half-full" color={this.props.darkMode == false ? "#616161" : "#EEEEEE"} size={35} style={styles.icon} />
+                                        <Icon name="star-half-full" color={this.props.darkMode == false ? "#0277BD" : "#EEEEEE"} size={35} style={styles.icon} />
                                         <Text style={{
-                                            color: this.props.darkMode == false ? "#616161" : "#EEEEEE",
+                                            color: this.props.darkMode == false ? "#0277BD" : "#EEEEEE",
                                             textAlign: 'center',
                                             paddingTop: 5,
                                             width: 80,
@@ -93,9 +93,9 @@ class ReviewTab extends Component {
                                         margin: 5
                                     }}>
                                     <TouchableOpacity onPress={() =>this.props.navigation.navigate('WrongAnswerList')} style={{ padding: 20 }}>
-                                        <Icon name="times-circle" color={this.props.darkMode == false ? "#616161" : "#EEEEEE"} size={35} style={styles.icon} />
+                                        <Icon name="times-circle" color={this.props.darkMode == false ? "#0277BD" : "#EEEEEE"} size={35} style={styles.icon} />
                                         <Text style={{
-                                            color: this.props.darkMode == false ? "#616161" : "#EEEEEE",
+                                            color: this.props.darkMode == false ? "#0277BD" : "#EEEEEE",
                                             textAlign: 'center',
                                             paddingTop: 5,
                                             width: 80,

@@ -402,7 +402,7 @@ export default class LearnTab extends Component {
                     onPress={this.updateIndex}
                     selectedIndex={selectedIndex}
                     buttons={buttons}
-                    containerStyle={{ height: 40, borderRadius: 20 }}
+                    containerStyle={{ height: 35, borderRadius: 10  }}
                     buttonStyle={{ backgroundColor: this.props.darkMode === false ? "#FAFAFA" : "#263238" }}
                     selectedButtonStyle={{ backgroundColor: this.props.darkMode === false ? "#1976D2" : "#616161" }}
                     textStyle={{ color: this.props.darkMode === false ? "#212121" : "#FAFAFA" }}

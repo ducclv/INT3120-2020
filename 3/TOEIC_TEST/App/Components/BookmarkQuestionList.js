@@ -57,7 +57,7 @@ export default class WrongAnswerList extends Component {
                             color: this.state.darkMode === false ? "#F5F5F5" : "#F5F5F5",
                             alignSelf: 'center', fontWeight: "bold"
                         }}>
-                            {item.exercise_id}
+                            {index+1}
                         </Text>
                     </View>
                     <Text style={{

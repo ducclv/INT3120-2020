@@ -35,13 +35,9 @@ const SettingTab = (props) => {
         noti()
     }, [])
     const getTheme = async () => {
-        try {
-            const value = await AsyncStorage.getItem('theme')
-            if (value === 'true') setSwitchValue(true)
-            else if (value === 'false') setSwitchValue(false)
-        } catch (e) {
-            console.log(e)
-        }
+        const value = await AsyncStorage.getItem('theme')
+        if (value === 'true') setSwitchValue(true)
+        else if (value === 'false') setSwitchValue(false)
     }
     const noti = () => {
         const date = new Date()
@@ -83,17 +79,11 @@ const SettingTab = (props) => {
     const handleConfirmFinish = time => {
         hideDatePickerFinish()
         setTimeFinish(time.getHours() + ":" + time.getMinutes())
-            ()
     };
     const toggleSwitch = async (value) => {
-        try {
-            await AsyncStorage.setItem('theme', `${value}`)
-            setSwitchValue(value)
-            props.setDarkMode(value)
-        } catch (e) {
-            console.log(e)
-        }
-
+        await AsyncStorage.setItem('theme', `${value}`)
+        setSwitchValue(value)
+        props.setDarkMode(value)
     }
     const handleEmail = () => {
         Mailer.mail({
